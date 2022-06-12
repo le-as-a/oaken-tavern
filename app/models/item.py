@@ -8,3 +8,12 @@ class Item(db.Model):
     desc = db.Column(db.Text, nullable=True)
     price = db.Column(db.Integer, nullable=False)
     img_url = db.Column(db.String, nullable=True)
+
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'name': self.name,
+            'desc': self.desc,
+            'price': self.price,
+            'img_url': self.img_url
+        }
