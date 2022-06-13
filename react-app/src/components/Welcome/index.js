@@ -1,11 +1,9 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-
-import Media from '../Media';
+import { NavLink } from 'react-router-dom';
+// import mainBG from './main-bg.mp4';
 import './welcome.css';
 
 const Welcome = () => {
-    const posts = useSelector(state => Object.values(state.posts));
     return (
         <div className='welcome'>
             <div className='main-container'>
@@ -16,7 +14,9 @@ const Welcome = () => {
                             A place to rest between Duty Finder queues and your PF filling.<br />
                             Find our discord <a href='https://discord.gg/Dn9DzY5eE4'>here</a>!
                         </div>
-                        <div className='menu-btn'>Our Menu</div>
+                        <NavLink to='/menu' className='menu-btn'>
+                            Our Menu
+                        </NavLink>
                     </div>
                 </div>
                 <div className='loc-info'>

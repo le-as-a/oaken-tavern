@@ -16,13 +16,11 @@
     display: flex;
     flex-direction: column;
     width: 55%;
-    border: 1px solid black;
 }
 
 #title {
     font-size: 60px;
     text-align: center;
-    border-bottom: 1px solid black;
 }
 
 .tavern-links {
@@ -33,22 +31,35 @@
 
 .tav-desc {
     font-family: 'Overpass', sans-serif;
-    margin: 1rem;
+    padding: 1rem;
     max-width: 70%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.tav-desc a {
+    color: #04D9B2;
+    text-decoration: none;
+}
+
+.tav-desc a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 .menu-btn {
-background-color: black;
-color: white;
-padding: 1rem;
-display: flex;
-align-items: center;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    text-align: center;
+    background-color: black;
+    text-decoration: none;
+    color: #FFEAB7;
 }
 
 .menu-btn:hover {
-    background-color: white;
+    background-color: #04D9B2;
     color: black;
-    border: 1px solid black;
 }
 
 .loc-info {
@@ -56,7 +67,6 @@ font-family: 'Overpass', sans-serif;
 font-size: xx-large;
 text-align: center;
 padding: 1rem;
-border: 1px solid black;
 }
 
 #loc-title {
@@ -69,47 +79,17 @@ margin-bottom: .5rem;
     font-size: x-large;
     text-align: center;
     margin-top: 1rem;
+    padding: .5rem;
 }
 
-.tavern-media {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-    max-height: 25em;
-    min-height: 25em;
-    width: 50vw;
-    border: 1px solid black;
-}
-
-.media-title {
-    font-size: x-large;
-    display: flex;
-    justify-content: center;
-}
-
-.media-imgs {
-    margin: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-height: 100%;
-    overflow-y: scroll;
-}
-
-.media-post {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: .75rem;
-    border-radius: .5rem;
-}
-
-.media-post:hover {
-    background-color: rgba(0, 0, 0, .35)
-}
-
-.post-img {
-    max-width: 15em;
-}
+/* #bg-vid {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+} */

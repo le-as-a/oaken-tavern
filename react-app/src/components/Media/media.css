@@ -1,0 +1,46 @@
+.tavern-media {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1rem;
+    max-height: 25em;
+    min-height: 25em;
+    width: 50vw;
+}
+
+.media-title {
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+
+.media-imgs {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-height: 100%;
+    overflow-y: scroll;
+}
+
+.media-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .75rem;
+    border-radius: .5rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+}
+
+.media-post:hover {
+    background-color: rgba(4, 217, 178, .6);
+    cursor: pointer;
+}
+
+.post-img {
+    max-width: 15em;
+    border-radius: .5rem;
+}

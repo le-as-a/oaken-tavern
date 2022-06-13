@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Welcome from './components/Welcome';
 import Media from './components/Media';
@@ -10,6 +10,7 @@ import { posts } from './store/posts';
 
 function App() {
   const [loaded, setLoaded] = useState(false);
+  const post_list = useSelector(state => Object.values(state.posts));
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -27,7 +28,9 @@ function App() {
     <BrowserRouter>
       <Welcome />
       <Switch>
-
+        <Route path='/' exact>
+          <Media posts={post_list} />
+        </Route>
       </Switch>
     </BrowserRouter>
   );
