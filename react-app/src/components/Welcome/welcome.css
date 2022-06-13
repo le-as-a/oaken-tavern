@@ -43,7 +43,7 @@
 
 .tav-desc a:hover {
     text-decoration: underline;
-    text-underline-offset: 2px;
+    text-underline-offset: 3px;
 }
 
 .menu-btn {
@@ -72,14 +72,6 @@ padding: 1rem;
 #loc-title {
 font-family: 'Original Surfer', cursive;
 margin-bottom: .5rem;
-}
-
-.loc-hrs {
-    font-family: 'Overpass', sans-serif;
-    font-size: x-large;
-    text-align: center;
-    margin-top: 1rem;
-    padding: .5rem;
 }
 
 /* #bg-vid {

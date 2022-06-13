@@ -3,9 +3,15 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('https://i.imgur.com/bFvK3BA.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.tavern-title, .loc-info, .tavern-media, .loc-hrs {
+.tavern-title, .loc-info, .tavern-media, .loc-hrs, .menu-container {
     background-color: rgba(4, 14, 6, 0.8);
     color: #FFEAB7;
+}
+
+.media-imgs::-webkit-scrollbar, .menu-screen::-webkit-scrollbar {
+    background-color: transparent;
 }

@@ -1,0 +1,66 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-screen {
+    max-width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 1.5em;
+    max-height: 25em;
+    overflow-y: scroll;
+}
+
+.menu-container {
+    padding: .5em;
+    margin-top: 1em;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-img {
+    max-height: 4em;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20em;
+}
+
+.item-text {
+    max-width: 20em;
+    margin-left: 1em;
+}
+
+.item-desc {
+    font-family: 'Overpass', sans-serif;
+    text-align: justify;
+    font-size: small;
+}
+
+.menu-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    width: 50vw;
+    margin-top: 1em;
+    font-size: larger;
+}
+
+.nav-main, .nav-order {
+    padding: 1em;
+    background-color: #04D9B2;
+    color: black;
+    text-decoration: none;
+}

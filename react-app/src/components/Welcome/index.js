@@ -25,10 +25,6 @@ const Welcome = () => {
                     Ward 21, Plot 37
                 </div>
             </div>
-            <div className='loc-hrs'>
-                <b>Full service nights:</b><br />
-                Fridays and Saturdays, starting at 8:00PM PST
-            </div>
         </div>
     );
 };
