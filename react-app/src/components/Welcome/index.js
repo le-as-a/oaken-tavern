@@ -1,7 +1,7 @@
 import React from 'react';
 import './welcome.css';
 
-const Welcome = () => {
+const Welcome = ({ posts }) => {
     return (
         <div className='welcome'>
             <div className='main-container'>
@@ -30,7 +30,12 @@ const Welcome = () => {
                     Share your screenshots with us on discord in the #media channel!
                 </div>
                 <div className='media-imgs'>
-                    
+                    {posts && posts.map(post => (
+                        <div className='media-post'>
+                            <img src={`${post.url}`} alt={`${post.id}-img`} className='post-img' />
+                            Posted by {post.user}
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
