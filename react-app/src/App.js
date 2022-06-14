@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Welcome from './components/Welcome';
 import Media from './components/Media';
 import Menu from './components/Menu';
+import Order from './components/Order';
 
 import { items } from './store/items';
 import { posts } from './store/posts';
@@ -28,13 +29,17 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Welcome />
       <Switch>
         <Route path='/' exact>
+          <Welcome />
           <Media posts={post_list} />
         </Route>
         <Route path='/menu' exact>
+          <Welcome />
           <Menu items={item_list} />
+        </Route>
+        <Route path='/order' exact>
+          <Order items={item_list} />
         </Route>
       </Switch>
     </BrowserRouter>

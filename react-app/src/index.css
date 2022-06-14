@@ -7,7 +7,7 @@ body {
     background-attachment: fixed;
 }
 
-.tavern-title, .loc-info, .tavern-media, .loc-hrs, .menu-container {
+.tavern-title, .loc-info, .tavern-media, .loc-hrs, .menu-container, .order-menu, .order {
     background-color: rgba(4, 14, 6, 0.8);
     color: #FFEAB7;
 }
