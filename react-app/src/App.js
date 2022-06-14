@@ -6,6 +6,7 @@ import Welcome from './components/Welcome';
 import Media from './components/Media';
 import Menu from './components/Menu';
 import Order from './components/Order';
+import Thanks from './components/Thanks';
 
 import { items } from './store/items';
 import { posts } from './store/posts';
@@ -40,6 +41,9 @@ function App() {
         </Route>
         <Route path='/order' exact>
           <Order items={item_list} />
+        </Route>
+        <Route path='/thanks' exact>
+          <Thanks />
         </Route>
       </Switch>
     </BrowserRouter>

@@ -1,0 +1,37 @@
+.thanks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    margin: auto;
+    margin-top: 10em;
+}
+
+.thx-container {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-complete {
+    font-size: 60px;
+}
+
+.staff {
+    font-family: 'Overpass', sans-serif;
+    font-size: x-large;
+    margin-bottom: 1em;
+}
+
+.thanks-links a {
+    color: #04D9B2;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.thanks-links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}

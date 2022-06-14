@@ -1,15 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import './order.css';
 
-import { add, remove, del } from '../../store/order';
-import { NavLink, Redirect } from 'react-router-dom';
+import { add, remove } from '../../store/order';
 
 const Order = ({ items }) => {
     const order = useSelector(state => state.order);
     const dispatch = useDispatch();
     const [username, setUsername] = useState('');
-    const minVal = 0;
 
     const onChange = e => {
         let val = e.target.value;
@@ -66,7 +65,7 @@ const Order = ({ items }) => {
                                     </div>
                                 </div>
                             </div>
-                            <input type='number' onChange={onChange} defaultValue={minVal} min='0' className='item-num' a-key={`${item.id}`} />
+                            <input type='number' onChange={onChange} min='0' className='item-num' a-key={`${item.id}`} />
                         </div>
                     ))}
                 </div>

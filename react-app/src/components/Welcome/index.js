@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import { del } from '../../store/order';
 // import mainBG from './main-bg.mp4';
 import './welcome.css';
 
+import { useDispatch } from 'react-redux';
+
 const Welcome = () => {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(del());
+    }, [dispatch]);
+
     return (
         <div className='welcome'>
             <div className='main-container'>

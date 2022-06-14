@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     gap: 2em;
     padding: 1.5em;
-    max-height: 25em;
+    max-height: 30em;
     overflow-y: scroll;
 }
 
